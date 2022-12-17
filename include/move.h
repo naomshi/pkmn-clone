@@ -4,8 +4,13 @@
 #include "type.h"
 
 typedef struct Move {
-    int dmgMultiplier;
-    Type type;
+    char* name;
+    int type;
+    float dmgMultiplier;
 } Move;
+
+Move* initMoveData();
+
+int getMoveIndex();
 
 #endif

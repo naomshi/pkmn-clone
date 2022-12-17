@@ -4,12 +4,16 @@
 #include "type.h"
 #include "move.h"
 
-struct Pokemon {
+typedef struct Pokemon {
     char* name;
-    Type type;
+    int type;
     int hitpoints;
     int attackDamage;
-    Move* move;
-};
+    int move;
+} Pokemon;
+
+Pokemon* initPokemonData(Move* moveData);
+
+void printPokemonData(Pokemon* pokemonData, Move* moveData);
 
 #endif

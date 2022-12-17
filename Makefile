@@ -20,4 +20,4 @@ $(BIN) $(OBJ):
 	mkdir $@
 
 clean: 
-	rm -rf src/*o main
+	rm -rf obj/ main
